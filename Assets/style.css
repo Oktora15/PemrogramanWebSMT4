@@ -1,11 +1,11 @@
-/* Assets/style.css */
 :root {
-    --primary: #020024;
-    --secondary: #090979;
-    --accent: #00d4ff;
-    --text: #333;
-    --background: #f5f8ff;
-    --content-bg: #ffffff;
+    --primary: #ff82b3;
+    --secondary: #ff5fa8;
+    --accent: #ffcee8;
+    --text: #3d1f33;
+    --background: #ffe6f3;
+    --content-bg: rgba(255, 255, 255, 0.95);
+    --footer-bg: rgba(77, 19, 43, 0.95);
 }
 
 * {
@@ -19,10 +19,10 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 8%, rgba(9, 9, 121, 1) 42%, rgba(0, 212, 255, 1) 100%);
+    background: linear-gradient(135deg, #ffe6f3 0%, #ffb2d2 50%, #ff82b3 100%);
     min-height: 100vh;
     padding-top: 70px;
 }
@@ -32,8 +32,8 @@ body {
     margin: 0 auto;
     padding: 24px;
     background-color: var(--content-bg);
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 18px;
+    box-shadow: 0 18px 40px rgba(149, 75, 113, 0.2);
 }
 
 .container {
@@ -43,28 +43,48 @@ body {
 }
 
 .navbar {
-    border-radius: 0 0 10px 10px;
-}
-
-.nav-link {
-    color: #222 !important;
+    border-radius: 0 0 12px 12px;
+    background-color: rgba(255, 255, 255, 0.9) !important;
 }
 
 .navbar-brand {
     font-weight: 700;
+    color: #6a2143 !important;
+}
+
+.nav-link {
+    color: #6a2143 !important;
+}
+
+.nav-link:hover {
+    color: #d61c67 !important;
 }
 
 #footer {
     text-align: center;
-    padding: 16px 20px;
-    background-color: rgba(51, 51, 51, 0.95);
-    color: #fff;
+    padding: 18px 20px;
+    background-color: var(--footer-bg);
+    color: #ffe6f3;
     margin-top: 24px;
+}
+
+button,
+.btn,
+input[type='submit'],
+input[type='reset'] {
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover,
+.btn:hover,
+input[type='submit']:hover,
+input[type='reset']:hover {
+    transform: translateY(-1px);
 }
 
 @media (max-width: 768px) {
     #content {
-        padding: 16px;
+        padding: 18px;
     }
     .container {
         width: 100%;

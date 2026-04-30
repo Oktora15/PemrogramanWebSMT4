@@ -1,0 +1,116 @@
+/* Assets/style2.css */
+body {
+    background: linear-gradient(135deg, #ffe6f3 0%, #ffbfd6 45%, #ff82b3 100%);
+}
+
+#container {
+    width: 100%;
+    max-width: 540px;
+    margin: 40px auto;
+    background-color: rgba(255, 255, 255, 0.96);
+    padding: 28px;
+    border-radius: 18px;
+    box-shadow: 0 14px 34px rgba(149, 75, 113, 0.18);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #8f1c57;
+}
+
+.deskripsi {
+    text-align: center;
+    color: #7e3b5f;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #58233d;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e1b9d5;
+    border-radius: 10px;
+    font-size: 14px;
+    background: #fff7fb;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #ff5fa8;
+    box-shadow: 0 0 0 4px rgba(255, 95, 168, 0.15);
+}
+
+.pilihan {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.pilihan input {
+    width: auto;
+    margin-right: 10px;
+}
+
+.pilihan label {
+    margin: 0;
+    font-weight: 500;
+    color: #58304a;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff5fa8;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e24c89;
+}
+
+.reset {
+    background-color: #d14a73;
+    margin-left: 8px;
+}
+
+.reset:hover {
+    background-color: #b8355f;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.navbar-brand,
+.nav-link {
+    color: #6a2143 !important;
+}
+
+.navbar .btn-outline-success {
+    border-color: #ff82b3;
+    color: #ff82b3;
+}
+
+.navbar .btn-outline-success:hover {
+    background-color: #ff82b3;
+    color: white;
+}
