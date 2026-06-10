@@ -152,7 +152,6 @@
             letter-spacing: 0.5px;
         }
 
-        /* Color themes per kategori */
         .kategori-anak     { background: #fff3cd; color: #664d00; }
         .icon-anak         { color: #f59e0b; }
         .label-anak        { background: #f59e0b; color: white; }
@@ -224,14 +223,12 @@
     </form>
 
     <?php
-    // Proses form setelah dikirim
+
     if (isset($_POST['submit'])) {
 
-        // Ambil dan bersihkan input dari form POST
         $nama = htmlspecialchars($_POST['nama']);
         $umur = (int) $_POST['umur'];
 
-        // Tentukan kategori usia menggunakan percabangan if-elseif-else
         if ($umur < 13) {
             $kategori  = "Anak-anak";
             $kelas     = "anak";
